@@ -5,6 +5,7 @@ import * as styles from '../components/CSS/style2.module.css'
 import '../components/fonts/fontawesome'
 import { icon } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
 const HeadLayout=() =>{
     return (
         <nav className={styles.headerNav}>
@@ -15,7 +16,7 @@ const HeadLayout=() =>{
                     class="pa pointer button" 
                     data-toggle="tip" 
                     data-target="#guestBlock_nv1" 
-                    data-click="y"><em><FontAwesomeIcon icon={'user'}/></em><span class="hidden">Đăng nhập</span></a></span>
+                    data-click="y"><em><FontAwesomeIcon icon={'user'}/></em></a></span>
                 </div>
                 <div className={styles.socialIcons}>
                 <span className={styles.visibleXsInlineBlock}>
@@ -32,23 +33,23 @@ const HeadLayout=() =>{
                 <div id="socialList" className={styles.content}>
                     <h3 className={styles.visibleXsInlineBlock}>Chúng tôi trên mạng xã hội</h3>
                     <ul className={styles.socialList}>
-                        <li className={styles.socialListLi}>
+                        <li>
                             <a href="https://www.facebook.com/Tr%C6%B0%E1%BB%9Dng-L%C3%BD-Th%C3%A1i-T%E1%BB%95-275587509571496/" 
                             target="_blank">
                                 <i>
-                                    <FontAwesomeIcon icon={'facebook'}/>
+                                    <FontAwesomeIcon icon={['fab','facebook-square']}></FontAwesomeIcon>
                                 </i>
                             </a>
                         </li>
-                        <li className={styles.socialListLi}>
+                        <li>
                             <a href="https://www.youtube.com/user/nukeviet" 
                             target="_blank">
                                 <i>
-                                    <FontAwesomeIcon icon={'youtube'}/>
+                                    <FontAwesomeIcon icon={['fab','youtube-square']}/>
                                 </i>
                             </a>
                         </li>
-                        <li className={styles.socialListLi}>
+                        <li>
                             <a href="#">
                                 <FontAwesomeIcon icon={'rss'}/>
                             </a>
@@ -68,11 +69,11 @@ const HeadLayout=() =>{
             <div id="contactList" class="content">
                 <h3 class={styles.visibleXsInlineBlock}>Thông tin liên hệ</h3> 
                     <ul className={styles.contactList}>
-                        <li className={styles.contactListLi}>
+                        <li>
                             <em><FontAwesomeIcon icon={'phone'}/></em>&nbsp;Hotline  0903.750.569 - 0937.566.511
                         </li>
-                        <li className={styles.contactListLi}>
-                            <em><FontAwesomeIcon icon={'envelope'}/></em>&nbsp;<a href="#">thptlythaito@gmail.com</a>
+                        <li >
+                            <em><FontAwesomeIcon icon={'envelope'}/></em>&nbsp;<a href="#" font="white">thptlythaito@gmail.com</a>
                             </li>
                     </ul>
 </div>
