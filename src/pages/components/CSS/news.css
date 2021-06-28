@@ -13,7 +13,7 @@
 }
 
 #topnews ul.lastest-news a {
-  background: transparent url("../images/squared-blue.png") no-repeat 5px 9px;
+  background: transparent no-repeat 5px 9px;
   border-bottom: 1px dotted #bbdbf6;
   color: #383838;
   display: block;
@@ -22,7 +22,7 @@
 }
 
 #topnews ul.lastest-news a:hover {
-  background: #fff url("../images/squared-blue.png") no-repeat 5px 9px;
+  background: #fff no-repeat 5px 9px;
 }
 
 /*div.news_column h5 .list-inline > li {
