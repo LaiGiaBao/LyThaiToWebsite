@@ -1,14 +1,35 @@
-import * as React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
-import * as styles from '../components/CSS/style2.module.css'
-import '../components/fonts/fontawesome'
-import { icon } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
-const HeadLayout=() =>{
-    return (
-        <nav className={styles.headerNav}>
+ <nav className={styles.headerNav}>
             <div className={styles.container}>
+            <div className={styles.wraper}>
+                <div className={styles.bodyBg}>
+                    <StaticImage className={styles.headBg}/>
+                <div text-align= "center;">
+                    <a href="http://kholanhkienhung.com">
+                        <span font-size="20px;">
+                            <span font-family= "times new roman,times,serif;">
+                                <strong>
+                                    <span color="rgb(255, 0, 0);">SỞ GIÁO DỤC &amp; ĐÀO TẠO TP HỒ CHÍ MINH</span>
+                                </strong>
+                            </span>
+                        </span><br  />
+                        <span color="rgb(255, 255, 0)">
+                            <span font-size="48px">
+                                <span font-family= "times new roman,times,serif;">
+                                    <strong>TRƯỜNG THPT LÝ THÁI TỔ</strong>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                </div>
+                <div className={`${styles.logo}, ${bootstrap.colXs24}, ${bootstrap.colSm24}, ${bootstrap.colMd8}`}>
+                <a title="Trường THPT Lý Thái Tổ" href="#">
+                    <StaticImage src="../../../images/logohotline.png" 
+                    width="392" height="128" alt="Trường THPT Lý Thái Tổ" />
+                </a>
+                </div>
+                
+            </div>
                 <div className={styles.personalArea}>
                 <span>
                     <a title="Đăng nhập - Đăng ký" 
@@ -77,8 +98,6 @@ const HeadLayout=() =>{
                     </ul>
 </div>
             </div>
+
             </div>
         </nav>
-    )
-}
-export default HeadLayout
