@@ -38,23 +38,23 @@ const HeadLayout2=() =>{
                                 <a href="#">Quy định chung</a>
                                 <a href="#">Lý Thái Tổ - vị vua...</a>
                                 <a href="#">Ban giám hiệu</a>
-                                <a href="#">Sơ đồ tổ chức</a>
+                                <a href="#">Sơ đồ tổ chức</a> 
                             </div>
                         </li>
                         <li className={styles.dropdown}>
-                            <a href="">Tin Tức</a>
+                            <a href="#">Tin Tức</a>
                             <div className={styles.dropdownContent}>
-                                <a>Bản tin trường</a>
-                                <a>Tin tức SGD &amp; ĐT</a>
-                                <a>Tin báo chí</a>
-                                <a>Hoạt động ngoại khoá</a>
-                                <a>Kỹ năng mềm</a>
+                                <a href="#">Bản tin trường</a>
+                                <a href="#">Tin tức SGD &amp; ĐT</a>
+                                <a href="#">Tin báo chí</a>
+                                <a href="#">Hoạt động ngoại khoá</a> 
+                                <a href="#">Kỹ năng mềm</a>
                             </div>
                         </li>
-                        <li><a href="">Tuyển sinh</a></li>
-                        <li><a href="">Đoàn thanh niên</a></li>
-                        <li><a href="">Thông báo</a></li>
-                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="#">Tuyển sinh</a></li>
+                        <li><a href="#">Đoàn thanh niên</a></li>
+                        <li><a href="#">Thông báo</a></li>
+                        <li><a href="#">Liên hệ</a></li>
                     </ul>
                 </div>
             </div>

@@ -118,8 +118,8 @@
 .logo {
   position: absolute;
   margin: 0;
-  top: 70px;
-  left: 20px;
+  top: 60px;
+  left: 170px;
 }
 .head-bg {
   position: absolute;
@@ -159,7 +159,7 @@
 }
 .first-nav {
   align-items: center;
-  width: 885px;
+  width: 800px;
   height: 60px;
   position: absolute;
   background-color: #0855a1;
@@ -187,7 +187,7 @@
   justify-content: center;
   position: relative;
   color: gray;
-  left: -70px;
+  left: -40px;
   height: 60px;
   width: 120px;
 }
@@ -299,18 +299,71 @@
   position: fixed;
   top: 100px;
   right: 50px;
+  z-index: 1;
 }
 .mid-layout {
-  width: 70%;
+  width: 75%;
   height: 1000px;
   position: absolute;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* z-index: 1; */
   top: 35%;
-  left: 15%;
+  left: 13%;
 }
-.head-layout,
-.layout-2 {
-  /* z-index: 2; */
+.mid-banner {
+  width: 50%;
+  position: relative;
+  left: 22%;
+}
+.left-mid-banner {
+  position: absolute;
+  width: 21%;
+  top: 1.1%;
+  left: 1%;
+}
+.video-container {
+  background-color: white;
+  float: right;
+  width: 23%;
+  position: absolute;
+  top: 1.1%;
+  right: 1%;
+  height: 50%;
+  border: 1px;
+  border-color: #dddddd;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.video-container thead > tr {
+  background-image: linear-gradient(#dddddd, #f4f4f4);
+  height: 40px;
+}
+.video-container thead > tr > th {
+  justify-content: center;
+}
+.tra-cuu-container {
+  position: absolute;
+  left: 1%;
+  top: 47%;
+  width: 21%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4088c5;
+  border-radius: 5px;
+}
+.tra-cuu-container thead > tr {
+  background-color: #4088c5;
+  height: 35px;
+  color: white;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tra-cuu-container thead {
+  border-radius: 5px;
+}
+.nav-table {
+  position: absolute;
+  right: 1%;
+  top: 53%;
 }
