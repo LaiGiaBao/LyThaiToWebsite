@@ -13,13 +13,13 @@ const HeadLayout2=() =>{
     return(
         <main>
             <div className={styles.headBg}>
-                <StaticImage src="http://thptlythaito.edu.vn/themes/default/images/header.png"
+                <StaticImage src="../../images/header.png"
                 alt="Background"
                 layout="fullWidth"
                 /> 
                 <div className={styles.logo}>
                     <a href="">
-                        <StaticImage src="http://thptlythaito.edu.vn/uploads/untitled-1_2_1.png" alt="hotline"
+                        <StaticImage src="../../images/logohotline.png" alt="hotline"
                         ></StaticImage>
                     </a>
                 </div>
@@ -32,8 +32,25 @@ const HeadLayout2=() =>{
                     <FontAwesomeIcon icon={'home'}></FontAwesomeIcon>
                 </a>
                     <ul>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="">Tin Tức</a></li>
+                        <li className={styles.dropdown}>
+                            <a href="#" >Giới thiệu</a>
+                            <div className={styles.dropdownContent}>
+                                <a href="#">Quy định chung</a>
+                                <a href="#">Lý Thái Tổ - vị vua...</a>
+                                <a href="#">Ban giám hiệu</a>
+                                <a href="#">Sơ đồ tổ chức</a>
+                            </div>
+                        </li>
+                        <li className={styles.dropdown}>
+                            <a href="">Tin Tức</a>
+                            <div className={styles.dropdownContent}>
+                                <a>Bản tin trường</a>
+                                <a>Tin tức SGD &amp; ĐT</a>
+                                <a>Tin báo chí</a>
+                                <a>Hoạt động ngoại khoá</a>
+                                <a>Kỹ năng mềm</a>
+                            </div>
+                        </li>
                         <li><a href="">Tuyển sinh</a></li>
                         <li><a href="">Đoàn thanh niên</a></li>
                         <li><a href="">Thông báo</a></li>
