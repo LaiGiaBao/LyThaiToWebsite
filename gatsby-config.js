@@ -13,7 +13,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     'gatsby-transformer-remark',
-    "@contentful/gatsby-transformer-contentful-richtext",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -56,7 +55,7 @@ module.exports = {
       options: {
         spaceId: `0x2drm3g9wja`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        accessToken: `SsgMHpK5Oj5kL_cd70J2PGDL9IKMdWbxpblrQ5OoLSE`,
       },
     },
   ],

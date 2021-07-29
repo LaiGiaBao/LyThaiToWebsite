@@ -1,0 +1,23 @@
+
+.tra-cuu table{
+    border-collapse:separate;
+    border:solid #4088c5 1px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+    background-color: #4088c5;
+}
+.tra-cuu thead{
+    align-items: center;
+}
+.tra-cuu div{
+    color: white;
+    font-size: 1.1rem;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: normal;
+
+}
+.tra-cuu tbody{
+    background-color: white;
+}

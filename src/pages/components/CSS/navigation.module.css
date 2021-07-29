@@ -1,0 +1,83 @@
+.nav-bar li{
+    display: inline;
+    color: grey;
+    padding: 10px;
+    align-items: flex-start;
+}
+.nav-bar {
+    height: 50px;
+    right: 50px
+}
+.nav-bar ul {
+    position: relative;
+    width: 800px;
+    height: 50px;
+    margin: auto;
+    float: left;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-bar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: gray;
+    left: -40px;
+    height: inherit;
+    width: 110px;
+    background-color: #0855a1
+  }
+  .nav-bar li > a {
+    text-decoration: none;
+  }
+  .nav-bar li > a:hover:visited,
+  .nav-bar li > a:hover {
+    background-color: #063b70;
+    color: white;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-bar li > a:visited,
+  .nav-bar > a {
+    text-decoration: dotted;
+    color: gray;
+    width: 70px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-bar > a:hover:visited,
+  .nav-bar > a:hover {
+    background-color: #063b70;
+    color: white;
+    height: 60px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dropdown-basic:hover{
+    background-color: #063b70;
+}
+.icon-facebook,.icon-youtube,.icon-rss,.icon-person  
+{
+  background-color:#428bca ;
+  width: 30px;
+  height:30px;
+  margin: 5px;
+  padding: 6px 7px;
+  padding-top: 3px;
+}
+.icon-facebook div:hover{
+  background-color: #dd4b39;
+  width: inherit;
+  height:inherit;
+}

@@ -8,3 +8,6 @@ body {
   position: absolute;
   bottom: 0;
 }
+.nav-bar >li>a:hover{
+  color:aqua;
+}

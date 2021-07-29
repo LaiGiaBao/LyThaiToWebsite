@@ -9,10 +9,9 @@ import "bootstrap/dist/css/bootstrap.css";
 const Layout = ({ children }) => {
   return (
     <div className="container-fluid position-relative">
-      <div className="row bg-primary">
-        {" "}
-        <div class="col">
-          <HeadNav />
+      <div className="row">
+        <div class="col" style={{'background-image': 'linear-gradient(#4188c6, #285d8b)'}}>
+          <HeadNav/>
         </div>
       </div>
       <StaticImage
@@ -23,7 +22,6 @@ const Layout = ({ children }) => {
         height={200}
       />
       <div className="row">
-        {" "}
         <div class="col">
           <HeadLayout />
         </div>
@@ -36,12 +34,12 @@ const Layout = ({ children }) => {
       </div>
 
       <div className="row">
-        <div clasName="col">
+        <div className="col">
           <StaticImage
             src="../../../images/layouts/banner_left_right.jpg"
             alt="Banner"
-            className="position-absolute top-50 translate-middle-y"
-            width={140}
+            width={120}
+            style={{left:'70px',top:'100px', position:'fixed'}}
           />
         </div>
         <div className="col-8" />
@@ -49,8 +47,9 @@ const Layout = ({ children }) => {
           <StaticImage
             src="../../../images/layouts/banner_left_right.jpg"
             alt="Banner"
-            className="position-absolute end-0 top-50 translate-middle-y"
-            width={140}
+            className="position-fixed" 
+            width={120}
+            style={{right:'70px',top:'100px', position:'fixed'}}
           />
         </div>
       </div>

@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { StaticImage } from "gatsby-plugin-image";
+import {faPhone, faEnvelope,faUser,faRss} from '@fortawesome/free-solid-svg-icons'
+import {faFacebook, faYoutubeSquare} from '@fortawesome/free-brands-svg-icons'
+import * as icons from '../CSS/icons.module.css'
 
 const HeadLayout = () => {
   return (
     <div class="position-relative">
-      <nav className="navbar navbar-dark">
+      <nav className="navbar navbar-dark" >
         <ul className="nav">
           <li className="nav-item">
             <a
@@ -15,7 +17,7 @@ const HeadLayout = () => {
               href="#"
             >
               <em>
-                <FontAwesomeIcon icon={"phone"} />
+                <FontAwesomeIcon icon={faPhone} />
               </em>
               &nbsp;Hotline 0903.750.569 - 0937.566.511
             </a>
@@ -24,7 +26,7 @@ const HeadLayout = () => {
             <a className="nav-link active" aria-current="page" href="#">
               <a href="#" className="stretch-link link-light">
                 <em>
-                  <FontAwesomeIcon icon={"envelope"} />
+                  <FontAwesomeIcon icon={faEnvelope} />
                 </em>
                 &nbsp;thptlythaito@gmail.com
               </a>
@@ -33,37 +35,40 @@ const HeadLayout = () => {
         </ul>
         <div class="position-absolute end-0">
           <ul className="nav m-2 gap-3 end-0">
-            <li>
-              <a
-                href="https://www.facebook.com/Tr%C6%B0%E1%BB%9Dng-L%C3%BD-Th%C3%A1i-T%E1%BB%95-275587509571496/"
-                target="_blank"
-              >
+            <li >
+              <div className={icons.iconFacebook}>
+                <a
+                  href="https://www.facebook.com/Tr%C6%B0%E1%BB%9Dng-L%C3%BD-Th%C3%A1i-T%E1%BB%95-275587509571496/"
+                  target="_blank"
+                  title="facebook"
+                >    
+                    <FontAwesomeIcon
+                      icon={faFacebook}
+                      color="white"
+                    />
+                </a>
+              </div>
+            </li>
+            <li >
+              <div className={icons.iconYoutube}>
+                <a href="https://www.youtube.com/user/nukeviet" target="_blank" title="Youtube">
+                  <em>
+                    <FontAwesomeIcon
+                      icon={faYoutubeSquare}
+                      color="white"
+                    />
+                  </em>
+                </a>
+              </div>
+            </li>
+            <li className={icons.iconRss}>
+              <a href="http://thptlythaito.edu.vn/index.php/vi/feeds/">
                 <em>
-                  <FontAwesomeIcon
-                    icon={["fab", "facebook-square"]}
-                    color="white"
-                  ></FontAwesomeIcon>
+                  <FontAwesomeIcon icon={faRss} color="white" />
                 </em>
               </a>
             </li>
-            <li>
-              <a href="https://www.youtube.com/user/nukeviet" target="_blank">
-                <em>
-                  <FontAwesomeIcon
-                    icon={["fab", "youtube-square"]}
-                    color="white"
-                  />
-                </em>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <em>
-                  <FontAwesomeIcon icon={"rss"} color="white" />
-                </em>
-              </a>
-            </li>
-            <li>
+            <li className={icons.iconPerson}>
               <span>
                 <a
                   title="Đăng nhập - Đăng ký"
@@ -73,7 +78,7 @@ const HeadLayout = () => {
                   href="#"
                 >
                   <em>
-                    <FontAwesomeIcon icon={"user"} color="white" />
+                    <FontAwesomeIcon icon={faUser} color="white" />
                   </em>
                 </a>
               </span>
